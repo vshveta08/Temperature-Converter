@@ -6,4 +6,5 @@ In this, we can convert Celsius temperature to Fahrenheit & Kelvin and Fahrenhei
 
 Below is the interface of the Temperature Converter project -
 
-![Screenshot (61)](https://user-images.githubusercontent.com/109027067/230952077-6d5c9a3a-166b-484a-a05f-57642f098b2e.png)
+![image](https://user-images.githubusercontent.com/109027067/230956255-161ead62-a38e-4066-a2d5-7966db759448.png)
+
