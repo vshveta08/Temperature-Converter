@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, #cc2b5e 30%, #753a88 100%);
+}
+#wrapper{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+#container{
+    border: 1px solid rgb(171, 226, 255);
+    box-shadow: 0 0 10px rgb(209, 239, 255);
+    border-radius: 10px;
+
+    height: 65%;
+    position: absolute;
+    left: 400px;
+    top: 110px;
+    color: white;
+
+}
+#heading{
+    text-align: center;
+    font-size: 2.2rem;
+    padding: 20px 30px 20px 30px;
+    border-bottom: 5px groove #cc2b5e62;
+    text-shadow: 2px 4px 2px rgba(0, 0, 0, 0.6);
+}
+#main{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    justify-content: center;
+    margin-top: 15px;
+    padding: 30px;
+    font-size: 1.3rem;
+}
+#input input{
+    width: 230px;
+    height: 37px;
+    font-size: 1.2rem;
+    padding: 0 5px 0 5px;
+    
+}
+#input input:focus{
+    outline-width: 1px;
+}
+#changeValue{
+    display: flex;
+    gap: 30px;
+}
+
+#changeValue select{
+    width: 160px;
+    height: 30px;
+    font-size: 1.1rem;
+    padding: 0 5px 0 5px;
+    border: none;
+}
+button{
+    width: 100%;
+    height: 39px;
+    background-color: rgb(192, 191, 191);
+    box-shadow: 1px 1px 3px rgb(59, 59, 59),
+    inset 3px 3px 4px white,
+    inset -2px -2px 4px rgb(70, 70, 70);
+    color: rgb(0, 0, 0);
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 5px;
+}
+button:hover{
+    cursor: pointer;
+}
+button:active{
+    background-color: rgb(161, 161, 161);
+    box-shadow: 1px 1px 3px rgb(47, 47, 47),
+    inset 3px 3px 8px white;
+    cursor: pointer;
+}
+#result input{
+    width: 370px;
+    height: 37px;
+    outline: none;
+    font-size: 1.2rem;
+    padding: 0 10px 0 10px;
+}
+#celsius{
+    height: 300px;
+    position: absolute;
+    top: 150px;
+    left: 30px;
+    
+    animation-name: change_size;
+    animation-duration: 3s;
+    /* no. of moves of object */
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-direction:alternate;
+}
+@keyframes change_size{
+    from{
+        height: 300px;
+    }
+    to{
+        height: 330px;
+    }
+}
+
+.tempImg{
+    height: 150px;
+    position: absolute;    
+}
+#K{
+    height: 100px;
+    position: absolute;
+    left: 860px;
+    top: 50px;
+    animation: changeKSize 2s infinite linear 2s alternate;
+}
+@keyframes changeKSize{
+    from{
+        height: 100px;
+    }
+    to{
+        height: 110px;
+    }
+}
+
+#C{
+    left: 1050px;
+    top: 230px;
+    height: 130px;
+
+    /* animation-name: change;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-direction:alternate; */ 
+
+    animation: change 3s infinite linear 2s alternate;
+}
+@keyframes change{
+    from{
+        height: 130px;
+    }
+    to{
+        height: 150px;
+    }
+}
+#F{
+    height: 150px;
+    left: 440px;
+    top: 470px;
+    opacity: 0.9;
+    animation: changeFSize 2s infinite linear 2s alternate;
+
+}
+@keyframes changeFSize{
+    from{
+        height: 150px;
+    }
+    to{
+        height: 160px;
+    }
+}
